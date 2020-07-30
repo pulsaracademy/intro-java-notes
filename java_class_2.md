@@ -584,6 +584,114 @@ System.out.print("The sum is: " + sum);
 // The sum is 5050
 ```
 
+## Arrays
+
+What is an array? An **array** is a data structure, which can store a fixed-size collection of elements of the same data type. An **array** is used to store a collection of data, but it is often more useful to think of an **array** as a collection of variables of the same type.
+
+It's essentially a list of items of a fixed length.
+
+For example, here are a couple arrays of length 5, so 5 **elements**.
+
+`[1, 2, 3, 4, 5]`
+
+`["banana", "orange", "apple", "banana", "peach"]`
+
+`[true, true, false, false, true]`
+
+We can see, the first array is an array of integers. The second one is an array of strings. The third is an array of boolean values.
+
+There are a few ways to define an array.
+
+```java
+// No initial values
+int[] intArray = new int[5];
+String[] stringArray = new String[10];
+boolean[] booleanArray = new boolean[21];
+
+// Pre-Set Values
+int[] intArray = new int[]{1, 2, 3, 4, 5};
+int[] intArray2 = {1, 2, 3, 4, 5};
+```
+
+We can see the general form is `type[] array = new type[length];` or `type[] array = {// stuff};`. 
+
+**Once the size is set, it cannot be changed**. This applies to both arrays with no pre-set values and arrays with pre-set values. 
+
+### Accessing Elements
+
+I want the 4th element of an array.
+
+```java
+int[] array = {1, 2, 3, 4, 5, 6};
+int fourthElement = array[3];
+// fourthELement = 4
+```
+
+Huh? Why did we pick 3?
+
+It's because of **indexing**.
+
+The first index in an array is **0**.
+
+![](C:\Users\ericc\OneDrive\Documents\PulsarAcademy\IntroJava1\array-index.gif)
+
+Therefore, we need to use **n-1** to get the **nth** element. 
+
+So, as you can see from above, we can access the element using the variable name + [index we want].
+
+For the **nth-element**, that would look like
+
+```java
+// n is the index you want
+dataType[] array = {// stuff};
+dataType nthIndex = array[n - 1];
+```
+
+**Note how the nth element is not the same as the nth index.** 
+
+Accessing the last element in the array, we can use an array's **length**. 
+
+However, note that the length will be **one more** than the last index of the array, so we must subtract 1.
+
+You can get the length of the array using the **length attribute**. 
+
+```java
+int[] arr = new int[6];
+
+System.out.print("Length: " + arr.length);
+// Length: 6
+```
+
+So, essentially, it is `arrayName.length`. 
+
+Note how length is not a method. There are **no parentheses.**
+
+To get the last element:
+
+```java
+// array of length "n"
+int[] arr = {n elements};
+
+// last element
+int lastElement = arr[arr.length - 1];
+```
+
+### Iterating through an array
+
+What if we want to print all the elements in an array?
+
+Use a for loop. But how? Simple:
+
+```java
+int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+for(int i = 0; i < arr.length; i++) {
+	System.out.print(arr[i]);
+}
+```
+
+Note how we can use `length` instead of `length - 1`, since we are using "less than". 
+
 ## Exporting a Java Project
 
 Go to File >> **Export**
@@ -605,6 +713,8 @@ This allows you to **condense** and **save a project** for other people to use. 
 Create a Project named: **FirstNameLastNameClass02**
 
 Create a package named: **firstnamelastname**
+
+Choose 2 of 3
 
 ### Part 1
 
