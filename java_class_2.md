@@ -139,7 +139,7 @@ System.out.println(result);
 
 For your reference. You can figure it out by yourself.
 
-![](C:.\precedence.png)
+![](./precedence.png)
 
 ### Stuff with Strings
 
@@ -633,7 +633,7 @@ It's because of **indexing**.
 
 The first index in an array is **0**.
 
-![](C:.\array-index.gif)
+![](./array-index.gif)
 
 Therefore, we need to use **n-1** to get the **nth** element. 
 
