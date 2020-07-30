@@ -139,7 +139,7 @@ System.out.println(result);
 
 For your reference. You can figure it out by yourself.
 
-![](C:\Users\ericc\AppData\Roaming\Typora\typora-user-images\image-20200727034309460.png)
+![](C:.\precedence.png)
 
 ### Stuff with Strings
 
@@ -633,7 +633,7 @@ It's because of **indexing**.
 
 The first index in an array is **0**.
 
-![](C:\Users\ericc\OneDrive\Documents\PulsarAcademy\IntroJava1\array-index.gif)
+![](C:.\array-index.gif)
 
 Therefore, we need to use **n-1** to get the **nth** element. 
 
@@ -643,7 +643,7 @@ For the **nth-element**, that would look like
 
 ```java
 // n is the index you want
-dataType[] array = {// stuff};
+dataType[] array = {stuff};
 dataType nthIndex = array[n - 1];
 ```
 
@@ -675,6 +675,8 @@ int[] arr = {n elements};
 // last element
 int lastElement = arr[arr.length - 1];
 ```
+
+**You cannot access an element outside the array's length. This includes negative numbers.** It will return an **ArrayIndexOutOfBounds** error.
 
 ### Iterating through an array
 
@@ -713,8 +715,6 @@ This allows you to **condense** and **save a project** for other people to use. 
 Create a Project named: **FirstNameLastNameClass02**
 
 Create a package named: **firstnamelastname**
-
-Choose 2 of 3
 
 ### Part 1
 
