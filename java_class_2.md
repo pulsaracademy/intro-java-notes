@@ -157,6 +157,9 @@ System.out.print(message + name);
 System.out.print(message + " " + name);
 // Hi, my name is Eric
 
+String fullName = name + " Chen";
+System.out.print(fullName);
+// Eric Chen
 ```
 
 Nice.
