@@ -501,7 +501,7 @@ You can employ a **method** to help you print the items in an array. Java does p
 
 ### You can't compare arrays using ==
 
-Use `array1.equals(array2)`. It's a default method built in. 
+Use `Arrays.equals(arr1, arr2)`. It's a default method built in. 
 
 ```
 String[] arr1 = {"hello", "bye", "hello again"};
@@ -509,7 +509,7 @@ String[] arr2 = {"hello", "bye", "hello again"};
 
 System.out.print(arr1 == arr2);
 // false
-System.out.print(arr1.equals(arr2));
+System.out.print(Arrays.equals(arr1, arr2));
 // true
 ```
 
@@ -579,6 +579,8 @@ The name of the Method. It follows **lowerCamelCasing**, just like variable name
 
 Methods can take in a variable to use. You must declare the **type**, and you can use it assuming it exists within the method itself. You do not need to have parameters. **They only exist within the scope of the method!**
 
+**THEY CAN BE ANY VARIABLE NAME, DON'T USE WHAT I USE. BE CLEAR.**
+
 ### How to Use
 
 You can call a method anywhere, as long as it is defined and you can reach it. This includes the **main, other methods, and different classes** (with the right scope). You can even call a method within itself (**recursion**). Let's do an example:
@@ -611,6 +613,16 @@ public static void main(String[] args) {
 ```
 
 Easy! 
+
+#### Methods don't need parameters
+
+```java
+public static void hello() {
+	System.out.print("hello");
+}
+```
+
+
 
 ### When would you want to use a method?
 
@@ -649,6 +661,21 @@ Return largest number in an integer array.
 Find if an integer is repeated in an array
 
 **Format:** `public static boolean hasRepeat(int[] arr)`
+
+### You Can Have Many Return Statements
+
+What the title says. If you have conditions, please use them to return separately. For example:
+
+```java
+public static String hello(String s) {
+	if(s.equals("banana")) {
+        return "you entered banana";
+    }
+    else {
+        return "you did not enter banana";
+    }
+}
+```
 
 ## Primitive Wrappers and Default Methods
 
@@ -939,7 +966,7 @@ Write a static method called **append** that **accepts two integer arrays as par
 
 For example, if arrays list1 and list2 store {2, 4, 6} and {1, 2, 3, 4, 5} respectively, the call of append(list1, list2) should return a new array containing {2, 4, 6, 1, 2, 3, 4, 5}. If the call instead had been append(list2, list1), the method would return an array containing {1, 2, 3, 4, 5, 2, 4, 6}.
 
-#### 8: Collapse
+#### 8: collapse
 
 Write a static method called **collapse** that accepts **an array of integers as a parameter** and **returns a new array containing the result of replacing each pair of integers with the sum of that pair.**
 
