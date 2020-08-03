@@ -177,7 +177,6 @@ This is the only way to combine strings. There is no fancier method. Python is c
   - default Object method
 - charAt
 - lastIndexOf
-- isEmpty
 
 **Consult Documentation for more!**
 
@@ -268,7 +267,7 @@ Cool!
 
 Why am I getting a yellow notification? Scanner's not closed? Why does that matter? 
 
-Answer: It can allow a **resource leak.** Resource leak happens when a program doesn’t release the resources it has acquired. As OS have limit on the number of sockets, file handles, etc., thus its extremely important to manage these non-memory resources explicitly. So we explicitly call the **close() method** free up resources .
+Answer: It can allow a **resource leak.** Resource leak happens when a program doesn’t release the resources it has acquired. As OS have limit on the number of sockets, file handles, etc., thus its extremely important to manage these non-memory resources explicitly. So we explicitly call the **close() method** free up resources.
 
 ```java
 sc.close();
