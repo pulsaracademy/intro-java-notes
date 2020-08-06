@@ -323,68 +323,6 @@ s1 = "1234"
 
 Use what you want. Works for doubles and other types as well. 
 
-## JavaDocs
-
-What is a **JavaDoc?** JavaDoc stands for Java Documentation,  for generating API documentation in HTML format from Java source code. It is a way to let people know what your methods do in a **readable format**. It's generally used for other people or yourself when you need to figure out what **something does**. 
-
-JavaDocs are placed before methods or classes in a comment-like syntax. It contains things like **parameters, return type, exceptions, description, input, and more**.
-
-Here's an example for a method called **factorial**, which returns the factorial of an integer.
-
-```java
-class Main {
-	/** 
-	 * This method returns the factorial of an integer, a mathematical operator.
-	 * The factorial of a non-negative integer n returns the product of every positive 		 * integer less than or equal to n. 0! = 1.
-	 * </p>
-	 * @param n - integer
-	 * @return n! - the factorial of the integer n
-	*/
-    public static int factorial(int n) {
-        // implementation
-    }
-}
-```
-
-As you can see, the way to start a JavaDoc is using `/** */`. You put them above the class/method you are writing it for.
-
-You can see the JavaDoc in HTML format if you go to Window -> Show View -> JavaDoc, or Alt + Shift + Q.
-
-There are special attributes that can be assigned to make things easier to see. They are added by putting an @ sign before the special keyword.
-
-The most common ones are:
-
-- @param: for addressing all parameters. Each parameter gets a @param classifier
-- @return: tells the user what is returned by the method
-- @throws or @exception: declares the specific errors thrown by the method
-- @author: your name so people know who created the method
-
-### When should I use a JavaDoc?
-
-Create a JavaDoc for each class and method that you create. It's good practice. It is tedious, but it will help in the future if you ever look back on your work.
-
-### Rule of Thumbs
-
-For **Class JavaDocs**,  include the following:
-
-- @author
-- Your Name, the date, and the Project name
-- What the Class is intended to do: a brief description of what is inside the class, and what the purpose is
-
-For **Method JavaDocs,** include the following:
-
-- The description of the method; what is is supposed to do
-- @param: for each parameter, and its meaning within the domain of the method
-- @return: what the method returns, and the data type
-- @throws: what are the exceptions to the method? What is not allowed? Why would it throw this error?
-  - for custom errors, generally
-
-### Documentation
-
-https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html
-
-Take a look if you're confused.
-
 ## Exceptions 
 
 What are exceptions? An **exception** is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. When an error occurs within a method, the method creates an object and hands it off to the runtime system.
@@ -559,7 +497,7 @@ catch(Exception e) {
 
 ## Homework
 
-Since I went over the homework completely, you should be able to complete it now. Turn it in the following class.
+Since I went over the homework completely, you should be able to complete it now. Turn it in the following class. 
 
 Rename the project to **FirstName + LastName Class04**. Leave the package name, I don't really care. 
 
@@ -567,7 +505,7 @@ Right Click Project -> Refactor -> Rename
 
 ### Things to add
 
-Create a **JavaDoc** for **each method** following the rules above. Create a **JavaDoc** for each **class**. Handle situations in your methods where an **exception should be thrown**. Make sure you implement it correctly. 
+Handle situations in your methods where an **exception should be thrown**. Make sure you implement it correctly. 
 
 I want you to complete **7 of 9 methods** of **ArraysPractice.java**, and complete **all first 5 methods of LoopsPractice.java**. 
 
@@ -603,7 +541,7 @@ For example, if a variable called list stores the following values: int[] list =
 
 ### String Manipulation
 
-Create a new class within the package named **StringManipulation.java**. 
+Create a new class within the package named **StringManipulation.java**. Default String methods: https://www.w3schools.com/java/java_ref_string.asp
 
 Implement these methods:
 
@@ -673,7 +611,7 @@ hasString("trickster", "trick") = true
 hasString("witches", "witch") = true
 ```
 
-#### backwardsSentence
+### backwardsSentence
 
 Write a method named **backwardsSentence** that takes in a sentence (String), and returns the sentence with words in reverse. Ignore special characters other than the hyphen.
 
