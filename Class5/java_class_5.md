@@ -370,6 +370,25 @@ What is each variable equal to?
 
 We'll go through it together. 
 
+#### Making a copy
+
+One way to make a copy of an array (specifically). You can use the `.clone()` method. This will create a **new object**. 
+
+```java
+int[] arr = {1, 2, 3, 4};
+int[] arr1 = arr.clone();
+
+arr[1] = 100;
+System.out.print(arr1[1]);
+// 2
+```
+
+### Strings
+
+As you might've noticed, I didn't use Strings as my example for this. This is because Strings are relatively unique. They are **immutable**. You can't even change a string. You can only create a new String object if you modify it using a method. Essentially, it returns a new String every time you modify it.
+
+It's special because of the way it works and its common use cases. That's all.
+
 ### Creating an Object from Scratch
 
 Will be up soon. 
