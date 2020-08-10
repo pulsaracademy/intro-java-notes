@@ -388,18 +388,3 @@ System.out.print(arr1[1]);
 As you might've noticed, I didn't use Strings as my example for this. This is because Strings are relatively unique. They are **immutable**. You can't even change a string. You can only create a new String object if you modify it using a method. Essentially, it returns a new String every time you modify it.
 
 It's special because of the way it works and its common use cases. That's all.
-
-### Creating an Object from Scratch
-
-Will be up soon. 
-
-## Homework
-
-Will be added soon.
-
-
-
-
-
-
-
