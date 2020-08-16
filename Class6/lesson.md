@@ -24,7 +24,7 @@ According to the JVM Specs:
 
 ### Exceptions
 
-The most common error trying to perform actions on a **null object** will return a `java.lang.NullPointerException`. For example, you can't call attributes or perform actions on something that has no value. We might encounter `null` in the future, but it's just something you need to know for now.
+The most common error trying to perform actions on a **null** will return a `java.lang.NullPointerException`. For example, you can't call attributes or perform actions on something that has no value. We might encounter `null` in the future, but it's just something you need to know for now.
 
 ## Creating Objects
 
@@ -38,6 +38,8 @@ String s = "hello";
 int[] arr = new int[5];
 
 double[][] dArr = new double[5][6];
+
+String[] arr = new String[5];
 
 Integer i = 5;
 
