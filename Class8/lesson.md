@@ -199,13 +199,15 @@ class Animal {
 }
 
 class Pig extends Animal {
-  public void animalSound() {
-    System.out.println("The pig says: wee wee");
+  	@Override
+    public void animalSound() {
+    	System.out.println("The pig says: wee wee");
   }
 }
 
 class Dog extends Animal {
   public void animalSound() {
+    @Override
     System.out.println("The dog says: bow wow");
   }
 }
