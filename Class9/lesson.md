@@ -314,4 +314,4 @@ Counts the number of vowels in a String
 
 ### `reverseString`
 
-Method name
+Method namegit
