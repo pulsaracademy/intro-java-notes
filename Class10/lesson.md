@@ -199,3 +199,31 @@ while(iterator.hasNext()) {
 ```
 
 Well...it's okay to be confused
+
+### Printing `HashMaps`
+
+Good thing it has a .`toString()` method. It will format it correctly if you print it normally:
+
+```
+System.out.print(hmap);
+```
+
+## Default Methods
+
+- `keySet()`: returns the keys as a Set Object
+- `clear()`: removes all key value pairs
+- `containsKey(Object key)`: whether map contains a certain key
+- `containsValue(Object value)`: whether map contains a value
+- `get(Object key)`: returns value associated with key
+- `isEmpty()`: whether map is empty
+- `put(Key k, Value v)`: Inserts key value mapping into the map
+- `size()`: returns number of key value airs
+- `values()`: returns the values as a Collection
+- `remove(Object Key)`: removes a key-value pair
+- `putAll(Map m)`: puts all the elements into a new one
+- `replace(Key k, Value v)`: Replaces the entry for the specified key only if it is currently mapped to some value.
+- `replace(Key k, Value oldValue, Value newValue)`: Replaces the entry for the specified key only if currently mapped to the specified value.
+
+## Example
+
+Return number of characters are repeated in a String
